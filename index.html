@@ -25,7 +25,6 @@
             margin: auto;
             padding: 20px;
             position: absolute;
-            /* opacity: 95%; */
         }
         #rain-container {
             position: relative;
@@ -36,7 +35,7 @@
         .book {
             position: absolute;
             bottom: 100%;
-            font-size: 3rem;
+            font-size: 2rem;
             animation: fall linear infinite;
         }
 
@@ -53,8 +52,8 @@
             color: #333;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,.3);
-            opacity: 98%;
             margin-bottom: 30px;
+            opacity: 0.98; /* Adjust this value to change transparency */
         }
         h1 {
             color: #556b2f;
@@ -76,15 +75,6 @@
             opacity: 0;
             animation: fadeInScale 1.5s ease forwards;
             color: #daa520;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .spinning-book {
-            display: inline-block;
-            animation: spin 2s linear infinite;
         }
         .section-title {
             color: #41339c;
@@ -119,7 +109,8 @@
     </script>
     <div class="container">
         <div class="notebook-cover">
-            <h1><span style="color:#daa520;">✨ CML Polymath Notebooks ✨</span></h1>
+            <!-- <h1><a href="https://github.com/cmlpolymath/Notebooks/tree/main" style="color:#daa520; text-decoration: none;">✨ CML Polymath Notebooks ✨</a></h1> -->
+            <h1><span ><a href="https://github.com/cmlpolymath/Notebooks/tree/main" style="color:#daa520; text-decoration: none;">✨ CML Polymath Notebooks ✨</a></span></h1>
             <p>Welcome to this repository, which contains all the notebooks based on Data Science books I've read.
                     The purpose of this repository is to show my journey through the field and, most importantly, <b>to share the knowledge.</b>
             </p>
